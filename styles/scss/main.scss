@@ -2,7 +2,7 @@
 @import "./mixins";
 @import "./variables";
 
-@import "index";
-@import "nav-bar";
-@import "contact";
+@import "../scss/index.scss";
+@import "../scss/nav-bar.scss";
+@import "../scss/contact.scss";
 // @import "gallery";
