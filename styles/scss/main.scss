@@ -1,8 +1,8 @@
 // _files aren't compiled with sass. Note for future me.
-@import "./mixins";
-@import "./variables";
+@import "/styles/scss/mixins";
+@import "/styles/scss/variables";
 
-@import "../scss/index.scss";
-@import "../scss/nav-bar.scss";
-@import "../scss/contact.scss";
+@import "/styles/scss/index.scss";
+@import "/styles/scss/nav-bar.scss";
+@import "/styles/scss/contact.scss";
 // @import "gallery";
