@@ -1,37 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/css/main.css" integrity="POz5lIZi3KES1xFtdBVkYi/6SDyQYebC4aE1xTk24O/QhJfi0RwFFCnq+eSoJpvASul4F/z0HYU2z+bOvDU2hg==">
+    <link rel="stylesheet" href="../styles/css/main.css"
+        integrity="POz5lIZi3KES1xFtdBVkYi/6SDyQYebC4aE1xTk24O/QhJfi0RwFFCnq+eSoJpvASul4F/z0HYU2z+bOvDU2hg==">
     <title> Contact </title>
 </head>
+
 <body>
     <div class="title-heading">
-        <h1 class="name-title"> CONTACT </h1>
-    </div>    
-    <div class="home-nav-bar">
+        <h1 class="business-title"> CARWASH BUILDERS </h1>
+    </div>
+    <!-- <div class="home-nav-bar">
         <nav class="nav-index"> 
-           <!-- <a href="./pages/about.html" > ABOUT </a> -->
-            <a href="/src/index.html" > Home </a>
+            <a href="/src/index.html" > HOME </a>
         </nav>
-    </div>   
-    <div class="form-container"> 
-        <form class="form" action="https://formspree.io/f/mzbyleyz" method="POST" >
+        <nav class="nav-index"> 
+           <a href="/src/pages/contact.html" > CONTACT </a>
+       </nav>
+    </div> -->
+    <ul>
+        <a href="/src/index.html">
+            <li>Home</li>
+        </a>
+        <a href="/src/pages/contact.html">
+            <li>Contact us</li>
+        </a>
+      </ul>
+    <div>
+        <h2> Fill out your details below </h2>
+    </div>
+    <div class="form-container">
+        <form class="form" action="https://formspree.io/f/mzbyleyz" method="POST">
             <label>
-                 EMAIL:
-                    <input type="email" name="_replyto">
+                EMAIL:
+                <input type="email" name="_replyto">
             </label>
             <label>
                 MESSAGE:
-            <textarea name="message"></textarea>
+                <textarea name="message"></textarea>
             </label>
             <button type="submit">Send</button>
         </form>
     </div>
     <footer>
-            <p class="copyright">  ©CarwashBuilders Aust </p>
+        <p class="copyright"> ©CarwashBuilders Aust </p>
     </footer>
 </body>
+
 </html>

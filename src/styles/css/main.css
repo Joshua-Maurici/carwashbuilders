@@ -1,13 +1,20 @@
-html, body {
+body {
   margin: 0;
   padding: 0;
   height: 100vh;
   width: 100vw;
   font-family: "Roboto", sans-serif;
-  background: rgb(17, 100, 102);
-  background: radial-gradient(circle, rgb(17, 100, 102) 0%, rgb(24, 25, 25) 87%);
+  background: url(/src/img/carwash-01.jpg);
+  background-size: cover;
+  backdrop-filter: blur(5px);
   background-repeat: no-repeat;
-  background-attachment: fixed;
+}
+
+h2 {
+  margin: 5%;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
 }
 
 .title-heading {
@@ -15,70 +22,23 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
-}
-.title-heading .name-title {
-  color: #d1e8e2;
-  font-weight: bold;
-  font-size: 8vw;
-  margin: 15px 0 0 0;
+  height: 20vh;
 }
 .title-heading .business-title {
   color: #d1e8e2;
   font-weight: bold;
-  font-size: 3vw;
+  font-size: 5vw;
   margin: 0 0 10px 0;
 }
 
-.home-nav-bar {
-  font-size: 25px;
-}
-.home-nav-bar nav {
-  height: 65vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.nav-index a:link {
-  background-color: #116466;
-  border-style: ridge;
-  border-radius: 10px;
-  text-decoration: none;
-  text-align: center;
-  font-weight: bold;
-  color: white;
-  width: 140px;
-  padding: 1% 2% 1% 2%;
-}
-
-.nav-index a:visited {
-  text-decoration: none;
-  color: #d1e8e2;
-}
-
-.nav-index a:hover {
-  color: #ffcb9a;
-  border-color: #ffcb9a;
-  transition: 0.2s;
-  transform: scale(1.5);
-}
-
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-}
-footer .social-icons {
-  margin: 0 0 0 5%;
-}
-footer .social-icons img {
-  background: #d1e8e2;
-  border-style: solid;
-  border-color: #d1e8e2;
-  border-radius: 5px;
-  height: 4vh;
 }
 footer .copyright {
   display: flex;
@@ -86,19 +46,6 @@ footer .copyright {
   color: #d1e8e2;
   font-size: 2vh;
   margin: 0;
-}
-footer .resume {
-  font-size: 3vh;
-  font-weight: bold;
-}
-
-.resume a:link, a:hover, a:active {
-  color: #ffcb9a !important;
-  text-decoration: none;
-}
-
-.resume a:visited {
-  color: #ffcb9a !important;
 }
 
 @media screen and (max-width: 420px) {
@@ -115,10 +62,65 @@ footer .resume {
   h2 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+  }
+}
+ul {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  max-width: 1000px;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+li {
+  padding: 1rem 2rem 1.15rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #000000;
+  min-width: 80px;
+  margin: auto;
+  list-style-type: none;
+}
+
+li a:visited {
+  text-decoration: none;
+}
+
+li a:hover {
+  background-image: url("https://scottyzen.sirv.com/Images/v/button.png");
+  background-size: 100% 100%;
+  color: #27262c;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 #ef816c;
+  font-weight: bold;
+}
+
+li a:active {
+  transform: translateY(4px);
+}
+
+@keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.2, 1.1);
+  }
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.05, 1);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1, 1);
   }
 }
 .form-container {
-  height: 50vh;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -139,6 +141,47 @@ footer .resume {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.gallery {
+  display: flex;
+  margin: 10px auto;
+  max-width: 600px;
+  position: relative;
+  padding-top: 66.6666666667%;
+}
+@media screen and (min-width: 600px) {
+  .gallery {
+    padding-top: 400px;
+  }
+}
+.gallery__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.gallery__thumb {
+  padding-top: 6px;
+  margin: 6px;
+  display: block;
+}
+.gallery__selector {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+.gallery__selector:checked + .gallery__img {
+  opacity: 1;
+}
+.gallery__selector:checked ~ .gallery__thumb > img {
+  box-shadow: 0 0 0 3px #0be2f6;
 }
 
 /*# sourceMappingURL=main.css.map */
