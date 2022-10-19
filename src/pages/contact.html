@@ -14,14 +14,7 @@
     <div class="title-heading">
         <h1 class="business-title"> CARWASH BUILDERS </h1>
     </div>
-    <!-- <div class="home-nav-bar">
-        <nav class="nav-index"> 
-            <a href="/src/index.html" > HOME </a>
-        </nav>
-        <nav class="nav-index"> 
-           <a href="/src/pages/contact.html" > CONTACT </a>
-       </nav>
-    </div> -->
+
     <ul>
         <a href="/src/index.html">
             <li>Home</li>
@@ -30,10 +23,34 @@
             <li>Contact us</li>
         </a>
       </ul>
-    <div>
+    <!-- <div>
         <h2> Fill out your details below </h2>
-    </div>
-    <div class="form-container">
+    </div> -->
+    <div class="container">  
+        <form id="contact" action="https://formspree.io/f/mzbyleyz" method="POST">
+          <h3>Contact Form</h3>
+          <h4>Contact us for further enquiry</h4>
+          <fieldset>
+            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Email Address" type="email" tabindex="2" required>
+          </fieldset>
+      <!--     <fieldset>
+            <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+          </fieldset> -->
+      <!--     <fieldset>
+            <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+          </fieldset> -->
+          <fieldset>
+            <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+    <!-- <div class="form-container">
         <form class="form" action="https://formspree.io/f/mzbyleyz" method="POST">
             <label>
                 EMAIL:
@@ -45,7 +62,8 @@
             </label>
             <button type="submit">Send</button>
         </form>
-    </div>
+    </div> -->
+
     <footer>
         <p class="copyright"> ©CarwashBuilders Aust </p>
     </footer>
