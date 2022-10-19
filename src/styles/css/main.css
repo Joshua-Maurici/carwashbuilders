@@ -44,7 +44,7 @@ footer {
 footer .copyright {
   display: flex;
   justify-content: flex-end;
-  color: #d1e8e2;
+  color: rgba(183, 196, 201, 0.6705882353);
   font-size: 2vh;
   margin: 0;
 }
@@ -84,6 +84,8 @@ li {
   min-width: 80px;
   margin: auto;
   list-style-type: none;
+  font-size: large;
+  font-weight: bold;
 }
 
 a:link {
@@ -95,7 +97,7 @@ a:visited {
 }
 
 a:hover {
-  background-image: url("https://scottyzen.sirv.com/Images/v/button.png");
+  background-image: url(/src/img/button.png);
   background-size: 100% 100%;
   color: #27262c;
   animation: spring 300ms ease-out;
@@ -144,7 +146,7 @@ a:active {
 .container {
   max-width: 400px;
   width: 100%;
-  margin: 4% auto;
+  margin: 10vh auto;
   position: relative;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 100;
@@ -166,7 +168,7 @@ a:active {
   background: #F9F9F9;
   padding: 10%;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-  box-sizing: border-box;
+  border-radius: 6px;
 }
 
 #contact h3 {
@@ -183,7 +185,7 @@ a:active {
   font-weight: 400;
 }
 
-fieldset {
+label {
   border: medium none !important;
   margin: 0 0 10px;
   min-width: 100%;
@@ -264,47 +266,6 @@ fieldset {
 
 :-ms-input-placeholder {
   color: #888;
-}
-
-img {
-  max-width: 100%;
-  vertical-align: top;
-}
-
-.gallery {
-  display: flex;
-  margin: 10px auto;
-  max-width: 600px;
-  position: relative;
-  padding-top: 66.6666666667%;
-}
-@media screen and (min-width: 600px) {
-  .gallery {
-    padding-top: 400px;
-  }
-}
-.gallery__img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-.gallery__thumb {
-  padding-top: 6px;
-  margin: 6px;
-  display: block;
-}
-.gallery__selector {
-  position: absolute;
-  opacity: 0;
-  visibility: hidden;
-}
-.gallery__selector:checked + .gallery__img {
-  opacity: 1;
-}
-.gallery__selector:checked ~ .gallery__thumb > img {
-  box-shadow: 0 0 0 3px #0be2f6;
 }
 
 /*# sourceMappingURL=main.css.map */

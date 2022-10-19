@@ -48,7 +48,7 @@
 .container {
   max-width: 400px;
   width: 100%;
-  margin: 4% auto;
+  margin:10vh auto;
   position: relative;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 100;
@@ -72,7 +72,7 @@
   padding:10%;
 //   margin: 150px 0;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-  box-sizing: border-box;
+  border-radius: 6px;
 
 }
 #contact h3 {
@@ -87,7 +87,7 @@
   font-size: 13px;
   font-weight: 400;
 }
-fieldset {
+label {
   border: medium none !important;
   margin: 0 0 10px;
   min-width: 100%;

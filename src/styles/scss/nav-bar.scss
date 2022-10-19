@@ -15,18 +15,18 @@ li {
 	min-width: 80px;
 	margin: auto;
     list-style-type: none;
+    font-size:large;
+    font-weight: bold;
 }
 
 a:link {
     text-decoration: none;
 }
-
 a:visited {
     text-decoration: none;
 }
-
 a:hover {
-  background-image: url('https://scottyzen.sirv.com/Images/v/button.png');
+  background-image: url(/src/img/button.png);
   background-size: 100% 100%;
   color: #27262c;
   animation: spring 300ms ease-out;
@@ -34,7 +34,6 @@ a:hover {
   font-weight: bold;
   text-decoration: none;
 }
-
 a:active {
   transform: translateY(4px);
   text-decoration: none;
