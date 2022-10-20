@@ -1,12 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   font-family: "Roboto", sans-serif;
   background: url(/img/carwash-01WEB.png);
   background-size: cover;
+  background-position: inherit;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   background-repeat: no-repeat;
@@ -34,7 +39,7 @@ h2 {
 }
 
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   height: 60px;
@@ -68,6 +73,7 @@ footer .copyright {
   }
 }
 ul {
+  padding: 0;
   display: flex;
   width: 80%;
   height: 5%;
@@ -131,18 +137,6 @@ a:active {
   }
 }
 /* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-
 /*  */
 .container {
   max-width: 400px;
@@ -267,6 +261,102 @@ label {
 
 :-ms-input-placeholder {
   color: #888;
+}
+
+img {
+  vertical-align: middle;
+  max-height: 535px;
+  width: 100%;
+  height: auto;
+}
+
+.imgPreview {
+  width: 100%;
+  height: 100px;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.galleryContainer {
+  margin: 0 20%;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgb(227, 101, 78);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: rgb(10, 8, 33);
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.imgPreview {
+  opacity: 0.6;
+}
+
+.active,
+.imgPreview:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main.css.map */

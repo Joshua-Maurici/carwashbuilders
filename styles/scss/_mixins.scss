@@ -18,14 +18,3 @@
     flex-wrap: wrap;
 }
 
-
-// Nav bar style
-@mixin navStyle {
-    background-color: #116466;
-    border-style: ridge;
-    border-radius: 10px;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-    color: white;
-}
