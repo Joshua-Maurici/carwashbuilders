@@ -5,7 +5,7 @@ body  {
     height:100vh;
     width: 100vw;
     font-family: 'Roboto', sans-serif;
-    background:url(/img/carwash-01WEB.jpg);
+    background:url(/img/carwash-01WEB.png);
     background-size:cover;
     backdrop-filter: blur(5px);
     background-repeat: no-repeat;
@@ -27,8 +27,9 @@ h2 {
     height: 20vh;
     // margin-bottom: 20px;
         .business-title {
-            color:$lightGreen;
-            font-weight: bold;
+            color:rgb(60, 64, 68);
+            font-weight:bold;
+            
             font-size: 5vw;
             margin: 0 0 10px 0; 
         }
