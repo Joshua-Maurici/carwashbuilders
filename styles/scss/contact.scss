@@ -1,54 +1,10 @@
-
-// .form-container {
-//     margin: 0 36% 0 36%;
-//     height: 28vh;
-//     @include flexCenterColumnWrap;
-//     background-color: rgb(162, 190, 214);
-//     border-radius: 10px;
-//     // outline-color: hsl(194, 13%, 55%);
-//     // outline-style: solid;
-//     box-shadow: 5px 5px;
-//     .form {
-//         @include flexCenterColumnWrap;
-//     }
-//     label {
-//         margin:5px;
-//         font-size: 2.5vh;
-//         color: rgb(255, 255, 255);
-//         @include flexCenterColumnWrap;
-//     }
-//     input{
-//         height: 3vh;
-//         width: auto;
-//     }
-//     button {
-//         font-size: large;
-//     }
-// }
-
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
 
-/* Reset */
-// * {
-//   margin: 0;
-//   padding: 0;
-//   -webkit-box-sizing: border-box;
-//   -moz-box-sizing: border-box;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-font-smoothing: antialiased;
-//   -o-font-smoothing: antialiased;
-//   font-smoothing: antialiased;
-//   text-rendering: optimizeLegibility;
-// }
 
-/*  */
-// body {
-  
-// }
 .container {
   max-width: 400px;
   width: 100%;
-  margin:10vh auto;
+  margin: 10vh auto;
   position: relative;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 100;
